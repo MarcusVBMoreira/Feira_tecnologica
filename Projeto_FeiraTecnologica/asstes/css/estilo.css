@@ -1,0 +1,34 @@
+/* CORES */
+:root{
+    --Preto-cor: #2d2d29;
+    --AzulEscuro-cor: #215a6d;
+    --AzulClaro-cor: #3ca2a2;
+    --Verde-cor: #92c7a3;
+    --Cinza-cor: #dfece6;
+}
+
+/* FONTES */
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2, h3, h4{
+    font-family: 'Tajawal', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* BODY */
+body    {
+    background-color: var(--Cinza-cor);
+}
+
+/* Header */
+.header{
+    background-color: var(--AzulClaro-cor);
+}
+
+/* Conainer */
