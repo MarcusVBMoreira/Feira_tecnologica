@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HearMeOut</title>
 
+        <!-- Bootstrap -->  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- CSS -->
         <link rel="stylesheet" href="asstes/css/reset.css">
         <link rel="stylesheet" href="asstes/css/estilo.css">
@@ -23,29 +28,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-        <!-- Bootstrap -->  
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!-- Favicon -->
         <link rel="shortcut icon" href="" type="image/x-icon">
         
 
     </head>
-    <body>
+    <body class="body">
 
         <!-- Menu -->
         <header class="header">
             <nav class="navbar">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="#"><img class="img_logo" src="" alt="HearMeOut"></a>
+                    <a href="#"><img class="img_logo" src="asstes/img/logo.png" alt="HearMeOut"></a>
                 </div>
                 <div class="menu">
-                    <li><a href="" role="button">Sobre</a></li>
-                    <li><a href="" role="button">tratamento</a></li>
-                    <li><a href="" role="button">Contato</a></li>
+                    <li><a href="#sobre" role="button">Sobre</a></li>
+                    <li><a href="#tratamento" role="button">tratamento</a></li>
+                    <li><a href="#contato" role="button">Contato</a></li>
                 </div>
             </nav>
         </header>
@@ -55,21 +55,21 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="asstes/img/test_1.jpg" class="d-block w-100" alt="...">
+                    <img src="asstes/img/teste_4.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="asstes/img/teste_2.jpg" class="d-block w-100" alt="...">
+                    <img src="asstes/img/teste_4.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="asstes/img/teste_3.jpg" class="d-block w-100" alt="...">
+                    <img src="asstes/img/teste_4.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" style="background-image: url(assets/img/left-arrow.png);" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon" style="background-image: url(asstes/img/left-arrow.png);" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" style="background-image: url(assets/img/right-arrow.png);" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon" style="background-image: url(asstes/img/right-arrow.png);" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -92,10 +92,14 @@
 
         </section>
 
-        <section class="container" id="container">
-            <h1>Container</h1>
+        <section class="contato" id="contato">
+            <h1>Contato</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum distinctio repellat atque eius praesentium mollitia quidem architecto officiis dolorum, exercitationem id amet tempora non ex molestiae, error veritatis. Tempora.</p>
         </section>
 
+        <footer>
+            <h3>©2023 HearMeOut</h3>
+        </footer>
 
     </body>
 </html>
