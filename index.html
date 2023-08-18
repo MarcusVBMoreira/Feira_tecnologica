@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HearMeOut</title>
 
-        <!-- Bootstrap -->  
+        <!-- !Bootstrap! -->  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- CSS -->
+        <!-- !CSS! -->
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/estilo.css">
 
-        <!-- Fonts -->
+        <!-- !Fonts! -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -28,30 +28,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon">
-        
+        <!-- !Favicon! -->
+        <link rel="shortcut icon" alt="logo HearMeOut" href="assets/img/favicon.jpg" type="image/x-icon">
 
     </head>
-    <body class="body">
+    <body class="body" id="body">
 
-        <!-- Menu -->
-        <header class="header">
-            <nav class="navbar">
+        <!-- !Menu! -->
+        <header class="header" id="header">
+            <div class="navbar">
                 <!-- Logo -->
-                <div class="logo">
-                    <a href="#"><img class="img_logo" src="assets/img/logoHearMeOut.png" alt="HearMeOut"></a>
+                <div class="logo" id="logo">
+                    <a href="#"><img class="img_logo" src="assets/img/logoHearMeOut.png" alt="Logo HearMeOut"></a>
                 </div>
-                <div class="menu">
-                    <li><a href="#quemsomos" role="button">Quem Somos</a></li>
-                    <li><a href="casos.html" role="button">Casos</a></li>
-                    <li><a href="jogo.html">Jogo</a></li>
-                    <li><a href="#contato" role="button">Contato</a></li>
-                </div>
-            </nav>
+                <nav class="menu" id="menu">
+                    <li><a id="header_titulo" href="#quemsomos" role="button">Quem Somos</a></li>
+                    <li><a id="header_titulo" href="casos.html" role="button">Casos</a></li>
+                    <li><a id="header_titulo" href="jogo.html">Jogo</a></li>
+                    <li><a id="header_titulo" href="#contato" role="button">Contato</a></li>
+                </nav>
+            </div>
         </header>
 
-        <!-- Carousel -->
+        <!-- !Carousel! -->
         <section class="carousel" id="carousel">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -76,12 +75,13 @@
             </div>
         </section>
 
-        <!-- container -->
+        <!-- !container! -->
         <section class="container">
-            <!-- quem somos -->
+
+            <!-- *quem somos* -->
             <section class="quemsomos" id="quemsomos">
                 <h1>Quem somos?</h1>
-                <img class="img_qmsomos" src="assets/img/img1.jpg" alt="">
+                <img class="img_qmsomos" src="assets/img/img1.jpg" alt="Imagem com dois ouvidos, um sinalizando que pode ouvir e outro sinalizando que não pode ouvir">
                 <p class="qm_somos_p1">
                     Somos um projeto escolar cujo o objetivo é usar os conhecimentos que aprendemos durante esses 2 anos para a feira 
                     tecnológica da nossa ecola.
@@ -92,13 +92,67 @@
                     nada ou quase nada e a diferença entre deficiência auditiva e surdo.
                 </p>
             </section>
-            <!-- diferença -->
+            
+            <!-- *Diferença* -->
             <section class="diferenca" id="diferenca">
-                <h1>Você sabe qual é a difença entre deficiência autitiva e surdez?</h1>
+                <!-- O que é -->
+                <h1>Deficiência autitiva ou surdez?</h1>
+                <p>
+                    As duas palavras estão corretas e podem ser utilizadas. Porém, os termos surdo e deficiente auditivo não devem ser tratados como sinônimos. 
+                </p>
+                <p>
+                    Entender essa diferença é o primeiro passo para ver que os indivíduos com perda auditiva têm outras necessidades, de acordo com o grau e o tipo de problema 
+                    que os acomete
+                </p>
+                <p>
+                    Do ponto de vista clínico, o deficiente auditivo e o surdo se distinguem de acordo com o grau da perda de audição. Isso reflete a capacidade de escutar 
+                    que a pessoa ainda apresenta e a forma como o problema se desenvolveu. Assim, deficiente auditivo é aquele que tem algum grau de perda auditiva mesmo que, 
+                    em algum momento, tal perda se torne total. O surdo, por sua vez, tem total ausência de audição. Ele não escuta nada, sendo que o problema pode ter origem 
+                    congênita ou não.Isso significa que, em grande parte dos casos, o indivíduo tem o problema desde o nascimento. Como consequência, ele aprendeu a se comunicar 
+                    de acordo com a Língua Brasileira de Sinais (Libras) ou outras formas de comunicação não verbais.
+                </p>
+
+                <!-- Acessibilidade -->
+                <h2>Como ter uma melhor acessibilidade?</h2>
+                <p>
+                    Ter uma melhor acessibilidade em relação a pessoas surdas envolve a adoção de práticas e abordagens que facilitem a comunicação, a interação e o envolvimento 
+                    de pessoas surdas em diversos contextos. Aqui estão algumas dicas e estratégias para melhorar a acessibilidade:
+                </p>
+                <!-- 1 -->
+                <p>
+                    <strong>1) Língua de Sinais:</strong> Reconheça e respeite a língua de sinais usada em sua região (por exemplo, a Língua Brasileira de Sinais - Libras). Aprender alguns sinais 
+                    básicos pode ajudar na comunicação e criar um ambiente mais inclusivo.
+                </p>
+                <!-- 2 -->
+                <p>
+                    <strong>2) Intérpretes de Libras:</strong> Disponibilize intérpretes de Libras em eventos, reuniões, palestras e atividades importantes para garantir que pessoas 
+                    surdas tenham acesso à informação em tempo real.
+                </p>
+                <!-- 3 -->
+                <p>
+                    <strong>3) Legendas e Legendagem ao Vivo:</strong> Utilize legendas em vídeos, apresentações, transmissões ao vivo e outros conteúdos audiovisuais. Isso permite 
+                    que pessoas surdas 
+                </p>
+                <!-- 4 -->
+                <p>
+                    <strong>4) Material Escrito:</strong> Forneça material escrito sempre que possível. Isso pode incluir resumos, agendas, informações detalhadas e apresentações por 
+                    escrito.
+                </p>
+                <!-- 5 -->
+                <p>
+                    <strong>5) Tecnologia Assistiva:</strong> Explore tecnologias como softwares de reconhecimento de fala e de tradução de texto para facilitar a comunicação em tempo 
+                    real.
+                </p>
+                <!-- 6 -->
+                <p>
+                    <strong>6) Comunicação Visual:</strong> Utilize elementos visuais, como gráficos, imagens e ícones, para complementar a comunicação oral. Isso ajuda a transmitir 
+                    informações de maneira mais clara.
+                </p>
             </section>
 
         </section>
 
+        <!-- !Contato! -->
         <section class="contato" id="contato">
             <h1>Contato</h1>
             <p>
@@ -106,9 +160,24 @@
             </p>
         </section>
 
+        <!-- !Footer! -->
         <footer>
-            <h3>©2023 HearMeOut</h3>
+            <h3><strong>©2023 HearMeOut</strong></h3>
         </footer>
 
+        <!-- !Vlibras! -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <!-- !Java Script! -->
+        <script src="assets/js/program.js"></script>
     </body>
 </html>

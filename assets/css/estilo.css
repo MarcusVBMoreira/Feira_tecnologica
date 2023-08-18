@@ -30,26 +30,45 @@ p{
     margin-left: 1%;
     margin-right: 1%;
     line-height: 150%;
+    text-align: justify;
 }
 a, button{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5em;
     color: var(--Preto-cor);
 }
-.body{
+strong{
+    font-weight: bold;
+}
+
+/* !ESTRUTURA! */
+html{
+    scroll-padding-top: 300px;
+    background-color: var(--Verde-cor);
+}
+body{
     background-color: var(--Cinza-cor);
+    margin-top: 140px;
 }
 
 /* !HEADER! */
 .header{
     background-color: var(--Verde-cor);
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    transition: 0.4s;
+    padding: 20px 10px;
+    top: 0;
 }
 .navbar{
     display: flex;
 }
 /*logo*/
 .logo{
-    width: 25%;
+    width: 30%;
+    transition: 0.4s;
+    margin-left: 3%;
 }
 .img_logo{
     width: 40%;
@@ -75,6 +94,8 @@ a, button{
     padding: 0;
     margin-top: 2%;
     margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
 }
@@ -98,14 +119,22 @@ footer h3{
 }
 
 
+
+
+
+
+
 /* !quem somos! */
 .img_qmsomos{
     width: 20%;
     float: right;
-    margin: 0% 0% 0% 2%;
+    margin: 0% 2% 0% 2%;
 }
 
 /* !Diferença! */
 .diferenca{
     margin-top: 3%;
+}
+.diferenca h2{
+    margin-top: 1%;
 }
