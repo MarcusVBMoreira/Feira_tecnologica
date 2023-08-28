@@ -82,6 +82,9 @@ body{
     width: 30%; 
     justify-content: space-around;
 }
+.menu a{
+    color: white;
+}
 
 
 /* !CARROUSEL! */
@@ -234,6 +237,12 @@ footer h3{
     margin: auto;
     padding-top: 1%;
 }
+.footer_ p, h2, h3, a{
+    color: black;
+}
+.footer_ a:hover{
+    color: white;
+}
 /* social */
 .social_footer{
     width: 25%;
@@ -267,3 +276,4 @@ footer h3{
 .p1{
     margin-top: 2%;
 }
+
