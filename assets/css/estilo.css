@@ -105,6 +105,23 @@ body{
 }
 
 
+/* !quem somos! */
+.img_qmsomos{
+    width: 20%;
+    float: right;
+    margin: 0% 2% 0% 2%;
+}
+
+
+/* !Diferença! */
+.diferenca{
+    margin-top: 3%;
+}
+.diferenca h2{
+    margin-top: 1%;
+}
+
+
 /* !Team! */
 .content_team{
     justify-content: center;
@@ -208,6 +225,7 @@ footer{
 footer h3{
     font-size: 1em;
     text-align: center;
+    margin-top: 1%;
 }
 .footer_{
     display: flex;
@@ -216,20 +234,36 @@ footer h3{
     margin: auto;
     padding-top: 1%;
 }
-
-
-/* !quem somos! */
-.img_qmsomos{
-    width: 20%;
-    float: right;
-    margin: 0% 2% 0% 2%;
+/* social */
+.social_footer{
+    width: 25%;
 }
-
-
-/* !Diferença! */
-.diferenca{
-    margin-top: 3%;
+.p_footer{
+    margin-top: 2%;
 }
-.diferenca h2{
-    margin-top: 1%;
+.footer_social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+/* nav */
+.nav_footer{
+    width: 25%;
+    height: 30%;
+}
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+.itens_nav{
+    margin: 2%;
+}
+/* contato */
+.contato_footer{
+    width: 25%;
+}
+.p1{
+    margin-top: 2%;
 }
