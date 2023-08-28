@@ -1,0 +1,269 @@
+/* !CORES! */
+:root{
+    --Preto-cor: #2d2d29;
+    --AzulEscuro-cor: #215a6d;
+    --AzulClaro-cor: #3ca2a2;
+    --Verde-cor: #92c7a3;
+    --Cinza-cor: #dfece6;
+}
+
+
+/* !FONTES! */
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    color: var(--Preto-cor);
+    padding: 1%;
+    text-align: center;
+}
+h2, h3, h4, span{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 2em;
+    color: var(--Preto-cor);
+    padding: 1%;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: var(--Preto-cor);
+    padding: 0.5%;
+    text-indent: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 150%;
+    text-align: justify;
+}
+a, button{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    color: var(--Preto-cor);
+}
+strong{
+    font-weight: bold;
+}
+
+
+/* !ESTRUTURA! */
+html{
+    scroll-padding-top: 300px;
+    background-color: var(--Verde-cor);
+}
+body{
+    background-color: var(--Cinza-cor);
+    margin-top: 180px;
+}
+
+/* !HEADER! */
+.header{
+    background-color: var(--Verde-cor);
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    transition: 0.4s;
+    padding: 20px 10px;
+    top: 0;
+}
+.navbar{
+    display: flex;
+}
+/*logo*/
+.logo{
+    width: 30%;
+    transition: 0.4s;
+    margin-left: 3%;
+}
+.img_logo{
+    width: 40%;
+    margin: 1%;
+}
+/*menu*/
+.menu{
+    display: flex;
+    width: 30%; 
+    justify-content: space-around;
+}
+
+
+/* !CARROUSEL! */
+.carousel{
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+
+/* !CONTAINER! */
+.container{
+    width: 90%;
+    padding: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* !quem somos! */
+.img_qmsomos{
+    width: 20%;
+    float: right;
+    margin: 0% 2% 0% 2%;
+}
+
+
+/* !Diferença! */
+.diferenca{
+    margin-top: 3%;
+}
+.diferenca h2{
+    margin-top: 1%;
+}
+
+
+/* !Team! */
+.content_team{
+    justify-content: center;
+    margin-top: auto;
+}
+.card_team{
+    width: 25%;
+    margin: 20px 20px 0 20px;
+}
+.team{
+    margin-top: 2%;
+}
+.team .member {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+.team .member img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.team .member .member-content {
+    padding: 0 20px 30px 20px;
+}
+.team .member h4 {
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 14px;
+    color: #6c757d;
+}
+.team .member p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #6c757d;
+}
+.team .member .social {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.team .member .social a {
+    color: #a2a2a2;
+    transition: 0.3s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #bbbbbb;
+}
+.team .member .social a:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+.social-links a {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 0;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+.social-links a:hover {
+    color: #fff;
+}
+.social-links a {
+    color: rgba(34, 34, 34, 0.5);
+    margin-right: 5px;
+}
+.social-links {
+    margin: 0 10px 10px 0;
+}
+.icon{
+    margin: 0 2%;
+    transition-duration: 0.25;
+}
+.icon:hover{
+    animation: shake 0.25s;
+}
+
+
+/* !FOOTER! */
+footer{
+    background-color: var(--AzulEscuro-cor);
+}
+footer h3{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1%;
+}
+.footer_{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding-top: 1%;
+}
+/* social */
+.social_footer{
+    width: 25%;
+}
+.p_footer{
+    margin-top: 2%;
+}
+.footer_social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+/* nav */
+.nav_footer{
+    width: 25%;
+    height: 30%;
+}
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+.itens_nav{
+    margin: 2%;
+}
+/* contato */
+.contato_footer{
+    width: 25%;
+}
+.p1{
+    margin-top: 2%;
+}
