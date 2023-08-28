@@ -7,6 +7,7 @@
     --Cinza-cor: #dfece6;
 }
 
+
 /* !FONTES! */
 h1{
     font-family: 'Bebas Neue', sans-serif;
@@ -40,6 +41,7 @@ a, button{
 strong{
     font-weight: bold;
 }
+
 
 /* !ESTRUTURA! */
 html{
@@ -81,12 +83,14 @@ body{
     justify-content: space-around;
 }
 
+
 /* !CARROUSEL! */
 .carousel{
     width: 100%;
     border: 0;
     margin: 0;
 }
+
 
 /* !CONTAINER! */
 .container{
@@ -100,14 +104,6 @@ body{
     flex-direction: column;
 }
 
-/* !CONTATO! */
-.contato{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 5%;
-    margin-left: 5%;
-}
 
 /* !Team! */
 .content_team{
@@ -204,6 +200,7 @@ body{
     animation: shake 0.25s;
 }
 
+
 /* !FOOTER! */
 footer{
     background-color: var(--AzulEscuro-cor);
@@ -211,6 +208,13 @@ footer{
 footer h3{
     font-size: 1em;
     text-align: center;
+}
+.footer_{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding-top: 1%;
 }
 
 
@@ -220,6 +224,7 @@ footer h3{
     float: right;
     margin: 0% 2% 0% 2%;
 }
+
 
 /* !Diferença! */
 .diferenca{
