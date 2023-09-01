@@ -4,26 +4,27 @@
     --AzulEscuro-cor: #215a6d;
     --AzulClaro-cor: #3ca2a2;
     --Verde-cor: #92c7a3;
+    --VerdeEscuro-cor: #7bab8a;
     --Cinza-cor: #dfece6;
 }
 
 
 /* !FONTES! */
 h1{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: MiedingerBold;
     font-size: 3em;
     color: var(--Preto-cor);
     padding: 1%;
     text-align: center;
 }
 h2, h3, h4, span{
-    font-family: 'Tajawal', sans-serif;
+    font-family: MiedingerBold;
     font-size: 2em;
     color: var(--Preto-cor);
     padding: 1%;
 }
 p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: MiedingerBook;
     font-size: 1em;
     color: var(--Preto-cor);
     padding: 0.5%;
@@ -34,17 +35,28 @@ p{
     text-align: justify;
 }
 a, button{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: MiedingerBook;
     font-size: 1.5em;
     color: var(--Preto-cor);
 }
 strong{
     font-weight: bold;
 }
-
 @font-face{
-    font-family: 'font1';
-    src: url('fonts/font1.ttf'), format(truetype);
+    font-family: MiedingerBold;
+    src: url(../fonts/Miedinger_-Bold.otf);
+}
+@font-face {
+    font-family: MiedingerBook;
+    src: url(../fonts/Miedinger_-Book.otf);
+}
+@font-face {
+    font-family: UnisonBold;
+    src: url(../fonts/Type\ Juice\ -\ Unison\ Pro\ Bold\ Round.otf);
+}
+@font-face {
+    font-family: UnisonLight;
+    src: url(../fonts/Type\ Juice\ -\ Unison\ Pro\ Light\ Round.otf);
 }
 
 
@@ -55,7 +67,7 @@ html{
 }
 body{
     background-color: var(--Cinza-cor);
-    margin-top: 180px;
+    margin-top: 150px;
 }
 
 /* !HEADER! */
@@ -64,12 +76,15 @@ body{
     position: fixed;
     z-index: 6;
     width: 100%;
-    transition: 0.4s;
+    transition: 0.7s;
     padding: 20px 10px;
     top: 0;
 }
 .navbar{
     display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 /*logo*/
 .logo{
@@ -84,11 +99,13 @@ body{
 /*menu*/
 .menu{
     display: flex;
-    width: 30%; 
+    width: 50%; 
     justify-content: space-around;
 }
 .menu a{
     color: white;
+    font-family: UnisonLight;
+    font-size: 1.3em;
 }
 .menu a:hover{
     color: var(--Preto-cor);
@@ -101,23 +118,38 @@ body{
 }
 .container_hearmeout{
     display: flex;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
-.hearmeout h2, h3, h4{
-    font-family: 'font1';
-    font-weight: normal;
+.hearmeout h2{
+    font-family: UnisonBold;
+    font-size: 4em;
+    color: white;
 }
-.hearmeout h4{
-    font-size: 1.2em;
+.hearmeout h3{
+    font-family: UnisonLight;
+    font-size: 2em;
+    color: white;
+}
+.titulo_hearmeout{
+    margin-bottom: 1%;
 }
 .corpo_header{
     width: 50%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding-top: 12%;
 }
 .img_header{
     width: 50%;
     display: flex;
     justify-content: center;
+}
+.header_img{
+    width: 80%;
+    margin-bottom: 2%;
 }
 
 /* !CONTAINER! */

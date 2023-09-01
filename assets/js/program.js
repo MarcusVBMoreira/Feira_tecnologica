@@ -8,10 +8,13 @@ function rolagem(){
         document.getElementsByTagName("header")[0].style.padding="1px 1px"
         document.getElementById("logo").style.fontSize="1px"
         document.getElementById("logo").style.width="20%"
+        document.getElementById("header").style.backgroundColor="var(--VerdeEscuro-cor)"
+        
     }else{
         document.getElementsByTagName("header")[0].style.padding="20px 10px"
         document.getElementById("logo").style.fontSize="20px"
         document.getElementById("logo").style.width="30%"
+        document.getElementById("header").style.backgroundColor="var(--Verde-cor)"
     }
 }
 
