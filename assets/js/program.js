@@ -1,4 +1,5 @@
 /* Scrol Header */
+
 window.onscroll=function(){
     rolagem()
 }
@@ -13,6 +14,8 @@ function rolagem(){
         document.getElementById("logo").style.width="30%"
     }
 }
+
+
 
 /* Carousel Time */
 
@@ -45,7 +48,6 @@ controls.forEach((control) => {
 });
 
 setInterval(timer, 7500);
-
 function timer(){
     currentItem += 1
 
@@ -60,3 +62,31 @@ function timer(){
 
     items[currentItem].classList.add("current-item");
 }
+
+
+
+/* Animação */
+
+const target = document.querySelectorAll('[data-anime]');
+const AnimationClass = 'animate';
+
+function animeScroll(){
+  const windowTop = window.scrollY + ((window.innerHeight * 5) / 6);
+  target.forEach( function(_element) {
+    if((windowTop) > _element.offsetTop){
+      _element.classList.add(AnimationClass);
+    } else{
+      _element.classList.remove(AnimationClass);
+    }
+
+    console.log(_element.offsetTop);
+
+  })
+}
+
+animeScroll();
+
+window.addEventListener('scroll', function(){
+  animeScroll();
+});
+
