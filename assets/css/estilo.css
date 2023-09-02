@@ -175,26 +175,56 @@ body{
 
 /* !Diferença! */
 .diferenca{
-    margin-top: 3%;
+    margin-top: 4%;
 }
 .diferenca h2{
     margin-top: 1%;
 }
+.diferenca_container{
+    display: flex;
+    margin-top: 2%;
+}
+/* Esquerda */
+.dif_esquerda{
+    width: 50%;
+    margin-right: 2%;
+}
+.dif_esquerda_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    max-height: 100%;
+}
+.img_dif_esquerda{
+    width: 70%;
+    border-radius: 10%;
+}
+/* Direita */
+.dif_direita{
+    width: 50%;
+    margin-left: 2%;
+}
+.dif_direita_img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+.img_dif_direita{
+    width: 50%;
+    border-radius: 10%;
+}
+.dif_direita h2{
+    text-align: center;
+}
 
 
 /* !Team! */
-/*
-.content_team{
-    justify-content: center;
-    margin-top: auto;
+.team{
+    margin-top: 4%;
 }
-*/
 .card_team{
     width: 25%;
     margin: 20px 20px 0 20px;
-}
-.team{
-    margin-top: 2%;
 }
 .team .member {
     text-align: center;
