@@ -232,6 +232,24 @@ body{
     border-radius: 10%;
 }
 
+/* !CASOS! */
+.casos_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-card{
+    float: left;
+    width: 20%;
+    margin-right: 4%;
+    border-radius: 10%;
+}
+.card{
+    width: 60%;
+    border-radius: 1%;
+    margin: 1%;
+}
+
 /* !Team! */
 .team{
     margin-top: 4%;
