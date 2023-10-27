@@ -233,6 +233,9 @@ body{
 }
 
 /* !CASOS! */
+.casos{
+    margin-top: 2%;
+}
 .casos_content{
     display: flex;
     flex-direction: column;
@@ -241,13 +244,19 @@ body{
 .img-card{
     float: left;
     width: 20%;
+    height: 20%;
     margin-right: 4%;
     border-radius: 10%;
 }
 .card{
-    width: 60%;
-    border-radius: 1%;
+    width: 75%;
     margin: 1%;
+}
+.card-body{
+    border-radius: 30%;
+}
+.img3{
+    width: 20%;
 }
 
 /* !Team! */
