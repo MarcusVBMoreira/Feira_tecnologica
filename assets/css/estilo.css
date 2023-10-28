@@ -8,7 +8,6 @@
     --Cinza-cor: #dfece6;
 }
 
-
 /* !FONTES! */
 h1{
     font-family: MiedingerBold;
@@ -64,10 +63,14 @@ strong{
 html{
     scroll-padding-top: 300px;
     background-color: var(--Verde-cor);
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--Cinza-cor);
     margin-top: 150px;
+}
+section:target{
+    scroll-margin-top: -200px;
 }
 
 /* !HEADER! */
@@ -80,6 +83,23 @@ body{
     padding: 20px 10px;
     top: 0;
 }
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+.header:hover::before {
+    left: 100%;
+}
+#menu-icon {
+    font-size: 36px;
+    color: #fff;
+    display: none;
+}
 .navbar{
     display: flex;
     width: 80%;
@@ -89,7 +109,7 @@ body{
 /*logo*/
 .logo{
     width: 30%;
-    transition: 0.4s;
+    transition: 0.7s;
     margin-left: 3%;
 }
 .img_logo{
@@ -101,16 +121,17 @@ body{
     display: flex;
     width: 50%; 
     justify-content: space-around;
+    transition: 0.7s;
 }
 .menu a{
     color: white;
     font-family: UnisonLight;
     font-size: 1.3em;
 }
-.menu a:hover{
+.menu a:hover,
+.menu a.active{
     color: var(--Preto-cor);
 }
-
 
 /* !HearMeOut! */
 .hearmeout{
@@ -163,7 +184,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-
 
 /* !quem somos! */
 .img_qmsomos{
@@ -249,7 +269,7 @@ body{
     border-radius: 10%;
 }
 .card{
-    width: 75%;
+    width: 80%;
     margin: 1%;
 }
 .card-body{
@@ -413,8 +433,6 @@ body{
     transition-timing-function: linear; 
     transition: all 900ms ease-in-out;
 }
-
-
 .gallery-wrapper::-webkit-scrollbar {
     display: none;
 }
@@ -422,8 +440,6 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
-  
 
 /* !FOOTER! */
 footer{
@@ -481,7 +497,6 @@ footer h3{
     margin-top: 2%;
 }
 
-
 /* !Animação! */
 [data-anime]{
     opacity: 0;
@@ -496,4 +511,174 @@ footer h3{
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+}
+
+
+
+/* !RESPONSIVIDADE DO SITE! */
+/* *PARA CELULAR* */
+@media screen and (max-width:767px){
+
+    /* !FONTES! */
+    h1{
+        font-size: 2em;
+    }
+    h2, h3, h4, span{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+    a, button{
+        font-size: 1.3em;
+    }
+
+    /* !ESTRUTURA! */
+    body{
+        margin-top: 80px;
+    }
+
+    /* !HEADER! */
+    #menu-icon {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+        z-index: 99;
+    }
+    .menu.active {
+        display: block;
+    }
+    .menu a {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .nav-bg {
+        position: fixed;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        background-color: var(--Verde-cor);
+        z-index: 1;
+        display: none;
+    }
+    .nav-bg.active {
+        display: block;
+    }
+
+    /* !HearMeOut! */
+    .container_hearmeout{
+        width: 100%;
+        margin: 0;
+    }
+    .hearmeout h2{
+        font-size: 2em;
+        margin-left: 2%
+    }
+    .hearmeout h3{
+        font-size: 1.5em;
+        margin-top: 10%;
+    }
+    .titulo_hearmeout{
+        margin-bottom: 1%;
+    }
+    .corpo_header{
+        width: 50%;
+        padding-top: 2%;
+        margin-left: 4%;
+    }
+    .img_header{
+        width: 50%;
+        margin-top: 4%;
+    }
+    .header_img{
+        width: 45%;
+    }
+
+    /* !CONTAINER! */
+    .container{
+        display: contents;
+    }
+
+    /* !SECTION CONTAINER! */
+    .quemsomos, .diferenca, .casos, .team{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* !QUEM SOMOS! */
+    .quemsomos{
+        margin-top: 2%;
+    }
+
+    /* !DIFERANÇA! */
+    .diferenca_container{
+        flex-direction: column;
+    }
+    .dif_direita, .dif_esquerda{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dif_esquerda_img, .dif_direita_img{
+       margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .img_dif_esquerda{
+        width: 35%;
+    }
+    .img_dif_direita{
+        width: 40%;
+    }
+
+    /* !CASOS! */
+    .card{
+        width: 100%;
+    }
+    .img-card{
+        width: 30%;
+    }
+
+    /* !TEAM! */
+    .team{
+        margin-bottom: 4%;
+    }
+    .container_time{
+        width: 75%;
+    }
+
+    /* !FOOTER! */
+    
+}
+
+/* ?--------------------------------------------------------? */
+/* *PARA TABLET/NOTBOOK* */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+}
+
+/* ?--------------------------------------------------------? */
+/* *PARA COMPUTADOR* */
+@media screen and (min-width: 1024px){
+
 }

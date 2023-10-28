@@ -15,6 +15,7 @@
     <!-- !CSS! -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- !Fonts! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,14 +47,16 @@
         <div class="logo" id="logo">
             <a href="index.html"><img class="img_logo" src="assets/img/logoHearMeOut.png" alt="Logo HearMeOut"></a>
         </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="menu" id="menu">
-            <li><a id="header_titulo" href="#quemsomos" role="button">Quem somos</a></li>
-            <li><a id="header_titulo" href="#diferenca" role="button">Diferença</a></li>
-            <li><a id="header_titulo" href="#casos">Casos</a></li>
-            <li><a id="header_titulo" href="#team" role="button">Time</a></li>
+            <a id="header_titulo" href="#quemsomos">Quem somos</a>
+            <a id="header_titulo" href="#diferenca">Diferença</a>
+            <a id="header_titulo" href="#casos">Casos</a>
+            <a id="header_titulo" href="#team">Time</a>
         </nav>
       </div>
     </header>
+    <div class="nav-bg" id="nav-bg"></div>
 
     <!-- !Herder! -->
     <section class="hearmeout" id="hearmeout">
@@ -69,7 +72,7 @@
     </section>
 
     <!-- !container! -->
-    <section class="container">
+    <div class="container">
 
       <!-- !quem somos! -->
       <section class="quemsomos" id="quemsomos">
@@ -98,6 +101,9 @@
               Entender essa diferença é o primeiro passo para ver que os indivíduos com perda auditiva têm outras necessidades, de acordo com o grau e o tipo de problema 
               que os acomete
             </p>
+            <div class="dif_esquerda_img" data-anime="left">
+              <img src="assets/img/auditivo.png" alt="" class="img_dif_esquerda">
+            </div>
             <p data-anime="left">
               Do ponto de vista clínico, o deficiente auditivo e o surdo se distinguem de acordo com o grau da perda de audição. Isso reflete a capacidade de escutar 
               que a pessoa ainda apresenta e a forma como o problema se desenvolveu. Assim, deficiente auditivo é aquele que tem algum grau de perda auditiva mesmo que, 
@@ -105,9 +111,6 @@
               congênita ou não.Isso significa que, em grande parte dos casos, o indivíduo tem o problema desde o nascimento. Como consequência, ele aprendeu a se comunicar 
               de acordo com a Língua Brasileira de Sinais (Libras) ou outras formas de comunicação não verbais.
             </p>
-            <div class="dif_esquerda_img" data-anime="left">
-              <img src="assets/img/auditivo.png" alt="" class="img_dif_esquerda">
-            </div>
           </div>
           <div class="dif_direita">
             <!-- *Acessibilidade* -->
@@ -195,16 +198,16 @@
       </section>
 
       <!-- !CASOS! -->
-      <section class="casos" id="casos" data-anime=""> 
+      <section class="casos" id="casos"> 
         <div class="titulo_casos" data-anime="left">
-          <h1>Casos</h1>
+          <h1 data-anime="left">Casos</h1>
         </div>
-        <div class="casos_content">
+        <div class="casos_content" data-anime="left">
 
           <!-- *caso 1* -->
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Millie Bobby Brown</h3>
+          <div class="card" data-anime="left">
+            <div class="card-body" data-anime="left">
+              <h3 class="card-title" data-anime="left">Millie Bobby Brown</h3>
               <img src="assets/img/Millie .JPG" class="img-card" alt="Millie Bobby Brown" data-anime="left">
               <p class="card-text" data-anime="left">
                 Uma das estrelas de uma das séries mais populares em todo o mundo atualmente, chamada "Stranger Things," também 
@@ -224,7 +227,7 @@
           <!-- *caso 2* -->
           <div class="card" data-anime="left">
             <div class="card-body" data-anime="left">
-              <h3 class="card-title">Ludwig van Beethoven</h3>
+              <h3 class="card-title" data-anime="left">Ludwig van Beethoven</h3>
               <img src="assets/img/Beethoven.JPG" class="img-card" alt="Ludwig van Beethoven" data-anime="left">
               <p class="card-text" data-anime="left">
                 Você sabia que Ludwig van Beethoven, um dos maiores músicos e compositores da história, sofria com perda de audição? 
@@ -241,9 +244,9 @@
           </div>
 
           <!-- *caso 3* -->
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Pedro Bial</h3>
+          <div class="card" data-anime="left">
+            <div class="card-body" data-anime="left">
+              <h3 class="card-title" data-anime="left">Pedro Bial</h3>
               <img src="assets/img/Pedro bial .JPG" class="img-card img3" alt="Pedro Bial" data-anime="left">
               <p class="card-text" data-anime="left">
                 O apresentador de televisão Pedro Bial revelou que tem perda auditiva no ouvido direito. O problema começou em 1994, 
@@ -275,7 +278,7 @@
             <button class="arrow-right control" aria-label="Next Image">▶</button>
             <div class="gallery-wrapper">
               <div class="row gy-4 content_team gallery">
-                <!-- Membro Marcus -->
+                <!-- *Membro Marcus* -->
                 <div class="card_team item current-item" data-aos="fade-up" data-aos-delay="100">
                   <div class="member">
                     <img src="assets/img/marcus.jpg" class="img-fluid" alt="">
@@ -288,7 +291,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Membro Maria Isadora -->
+                <!-- *Membro Maria Isadora* -->
                 <div class="card_team item" data-aos="fade-up" data-aos-delay="200">
                   <div class="member">
                     <img src="assets/img/maria.jpg" class="img-fluid" alt="">
@@ -301,7 +304,7 @@
                     </div>
                   </div>
                 </div>  
-                <!-- Membro Miguel -->
+                <!-- *Membro Miguel* -->
                 <div class="card_team item " data-aos="fade-up" data-aos-delay="200">
                     <div class="member">
                       <img src="assets/img/miguel.jpg" class="img-fluid" alt="">
@@ -314,7 +317,7 @@
                       </div>
                     </div>
                   </div>
-                <!-- Membro Thifany -->
+                <!-- *Membro Thifany* -->
                 <div class="card_team item" data-aos="fade-up" data-aos-delay="400">
                   <div class="member">
                     <img src="assets/img/thifany.jpg" class="img-fluid" alt="">
@@ -327,7 +330,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Membro Vinícius -->
+                <!-- *Membro Vinícius* -->
                 <div class="card_team item" data-aos="fade-up" data-aos-delay="500">
                     <div class="member">
                       <img src="assets/img/vinicius.jpg" class="img-fluid" alt="">
