@@ -11,8 +11,8 @@ function rolagem(){
         document.getElementById("header").style.backgroundColor="var(--VerdeEscuro-cor)"
         document.getElementById("nav-bg").style.top="50px"
         document.getElementById("nav-bg").style.backgroundColor="var(--VerdeEscuro-cor)"
-        
-    }else{
+    }
+    else{
         document.getElementsByTagName("header")[0].style.padding="20px 10px"
         document.getElementById("logo").style.fontSize="20px"
         document.getElementById("logo").style.width="30%"
@@ -21,7 +21,6 @@ function rolagem(){
         document.getElementById("nav-bg").style.backgroundColor="var(--Verde-cor)"
     }
 }
-
 
 
 /* Carousel Time */

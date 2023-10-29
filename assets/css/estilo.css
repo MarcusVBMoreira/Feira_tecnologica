@@ -212,7 +212,8 @@ section:target{
 .dif_esquerda_img{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     max-height: 100%;
 }
 .img_dif_esquerda{
@@ -513,23 +514,199 @@ footer h3{
     transform: translate3d(0, 0, 0);
 }
 
+/* ?-------------------------------------------------------------------------------------------------------------? */
+/* ?-------------------------------------------------------------------------------------------------------------? */
+/* ?-------------------------------------------------------------------------------------------------------------? */
+/* ?-------------------------------------------------------------------------------------------------------------? */
+/* ?-------------------------------------------------------------------------------------------------------------? */
+/* ?-------------------------------------------------------------------------------------------------------------? */
+/* !RESPONSIVIDADE DO SITE! */
+/* **PARA CELULAR PEQUENO */
+@media screen and (max-width: 480px) {
 
+    /* !FONTES! */
+    h1{
+        font-size: 1.6em;
+    }
+    h2, h3, h4, span{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    a, button{
+        font-size: 1em;
+    }
 
+    /* !ESTRUTURA! */
+    body{
+        margin-top: 90px;
+    }
 
+    /* !HEADER! */
+    #menu-icon {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+        z-index: 99;
+    }
+    .menu.active {
+        display: block;
+    }
+    .menu a {
+        display: block;
+        margin: 1rem 0;
+    }
+    .nav-bg {
+        position: fixed;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        height: 170px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        background-color: var(--Verde-cor);
+        z-index: 1;
+        display: none;
+    }
+    .nav-bg.active {
+        display: block;
+    }
+    .img_logo{
+        width: 52%;
+        margin: 0;
+    }
 
+    /* !HearMeOut! */
+    .container_hearmeout{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .hearmeout h2{
+        font-size: 1.6em;
+    }
+    .hearmeout h3{
+        font-size: 1em;
+        margin-top: 2%;
+    }
+    .titulo_hearmeout{
+        margin: 0;
+    }
+    .corpo_header{
+        width: 100%;
+        padding-top: 2%;
+    }
+    .img_header{
+        width: 100%;
+    }
+    .header_img{
+        width: 45%;
+    }
 
+    /* !CONTAINER! */
+    .container{
+        display: contents;
+    }
 
+    /* !SECTION CONTAINER! */
+    .quemsomos, .diferenca, .casos, .team{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    /* !QUEM SOMOS! */
+    .quemsomos{
+        margin-top: 2%;
+    }
 
-@media (max-width: 768px) {
+    /* !DIFERANÇA! */
+    .diferenca_container{
+        flex-direction: column;
+    }
+    .dif_direita, .dif_esquerda{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dif_esquerda_img, .dif_direita_img{
+       margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .img_dif_esquerda{
+        width: 35%;
+    }
+    .img_dif_direita{
+        width: 40%;
+    }
+
+    /* !CASOS! */
+    .card{
+        width: 100%;
+    }
+    .img-card{
+        width: 30%;
+    }
+
+    /* !TEAM! */
+    .team{
+        margin-bottom: 4%;
+    }
+    .container_time{
+        width: 90%;
+    }
+
+    /* !FOOTER! */
+    .footer_{
+        padding-top: 2%;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        flex-direction: column;
+    }
+    .social_footer, .contato_footer{
+        width: 100%;
+    }
+    .social_footer{
+        text-align: center;
+    }
+    .footer_social{
+        margin-top: 2%;
+    }
+    .footer_social a{
+        font-size: 1.7em;
+    }
+    .nav_footer{
+        display: none;
+    }
+    .contato_footer{
+        margin-top: 4%;
+        text-align: center;
+    }
+    .p1{
+        margin-top: 0;
+    }
+    .contato_footer p{
+        text-align: center;
+    }
+    .footer h3{
+        font-size: 1.2em;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
     
 }
 
-
-
-/* !RESPONSIVIDADE DO SITE! */
+/* ?--------------------------------------------------------? */
 /* *PARA CELULAR* */
-@media screen and (max-width:767px){
+@media screen and (min-width: 480px) and (max-width:767px){
 
     /* !FONTES! */
     h1{
@@ -547,7 +724,7 @@ footer h3{
 
     /* !ESTRUTURA! */
     body{
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
     /* !HEADER! */
@@ -584,6 +761,10 @@ footer h3{
     .nav-bg.active {
         display: block;
     }
+    .img_logo{
+        width: 52%;
+        margin: 0;
+    }
 
     /* !HearMeOut! */
     .container_hearmeout{
@@ -596,7 +777,7 @@ footer h3{
     }
     .hearmeout h3{
         font-size: 1.5em;
-        margin-top: 10%;
+        margin-top: 6%;
     }
     .titulo_hearmeout{
         margin-bottom: 1%;
@@ -608,7 +789,6 @@ footer h3{
     }
     .img_header{
         width: 50%;
-        margin-top: 4%;
     }
     .header_img{
         width: 45%;
@@ -668,6 +848,43 @@ footer h3{
     }
 
     /* !FOOTER! */
+    .footer_{
+        padding-top: 2%;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        flex-direction: column;
+    }
+    .social_footer, .contato_footer{
+        width: 100%;
+    }
+    .social_footer{
+        text-align: center;
+    }
+    .footer_social{
+        margin-top: 2%;
+    }
+    .footer_social a{
+        font-size: 1.7em;
+    }
+    .nav_footer{
+        display: none;
+    }
+    .contato_footer{
+        margin-top: 4%;
+        text-align: center;
+    }
+    .p1{
+        margin-top: 0;
+    }
+    .contato_footer p{
+        text-align: center;
+    }
+    .footer h3{
+        font-size: 1.2em;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
     
 }
 
@@ -675,10 +892,140 @@ footer h3{
 /* *PARA TABLET/NOTBOOK* */
 @media screen and (min-width: 767px) and (max-width: 1023px){
 
+    /* !FONTES! */
+    h1{
+        font-size: 2em;
+    }
+    h2, h3, h4, span{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+    a, button{
+        font-size: 1.3em;
+    }
+
+    /* !ESTRUTURA! */
+    body{
+        margin-top: 100px;
+    }
+
+    /* !HEADER! */
+    .navbar{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .menu{
+        width: 70%;
+    }
+    .menu a{
+        font-size: 1.1em;
+    }
+
+    /* !HearMeOut! */
+    .container_hearmeout{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .corpo_header{
+        padding-top: 2%;
+    }
+    .hearmeout h2{
+        font-size: 2.3em;
+        margin-left: 2%
+    }
+    .hearmeout h3{
+        font-size: 1.5em;
+        margin-top: 6%;
+    }
+    .titulo_hearmeout{
+        margin-bottom: 1%;
+    }
+    .img_header{
+        width: 50%;
+    }
+    .header_img{
+        width: 45%;
+    }
+
+    /* !CONTAINER! */
+
+    /* !SECTION CONTAINER! */
+
+    /* !QUEM SOMOS! */
+
+    /* !DIFERANÇA! */
+
+    /* !CASOS! */
+
+    /* !TEAM! */
+    .team{
+        margin-bottom: 2%;
+    }
+    .container_time{
+        width: 100%;
+    }
+    .item{
+        width: 300px;
+    }
+
+    /* !FOOTER! */
+    .footer_{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        justify-content: space-evenly;
+    }
+    .social_footer,.nav_footer, .contato_footer{
+        width: 35%;
+        text-align: center;
+
+    }
+    .contato_footer p{
+        text-align: center;
+    }
+    .footer_social a{
+        font-size: 1.7em;
+    }
+    footer h3{
+        font-size: 1.3em;
+    }
+
 }
 
 /* ?--------------------------------------------------------? */
 /* *PARA COMPUTADOR* */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) and (max-width: 1450px){
+    .body{
+        margin-top: 75px;
+    }
+    .container_hearmeout{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .corpo_header{
+        padding-top: 10%;
+    }
+    .corpo_header h2{
+        font-size: 3.3em;
+    }
+    .corpo_header h3{  
+        font-size: 1.8em;
+    }
+    .navbar{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .menu{
+        width: 65%;
+    }
 
 }
