@@ -57,6 +57,10 @@ strong{
     font-family: UnisonLight;
     src: url(../fonts/Type\ Juice\ -\ Unison\ Pro\ Light\ Round.otf);
 }
+@font-face {
+    font-family: Akira;
+    src: url(../fonts/Akira\ Expanded\ Demo.otf);
+}
 
 
 /* !ESTRUTURA! */
@@ -108,7 +112,7 @@ section:target{
 }
 /*logo*/
 .logo{
-    width: 3%;
+    width: 30%;
     transition: 0.7s;
     margin-left: 3%;
 }
@@ -147,7 +151,7 @@ section:target{
     margin-left: 10%;
 }
 .hearmeout h2{
-    font-family: UnisonBold;
+    font-family: Akira;
     font-size: 4em;
     color: white;
 }
@@ -467,7 +471,7 @@ footer h3{
     color: rgb(207, 207, 207);
 }
 .footer_ h2{
-    font-family: UnisonBold;
+    font-family: Akira;
     font-size: 1.5em;
     color: white;
 }
