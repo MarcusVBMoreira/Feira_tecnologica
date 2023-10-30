@@ -108,7 +108,7 @@ section:target{
 }
 /*logo*/
 .logo{
-    width: 30%;
+    width: 3%;
     transition: 0.7s;
     margin-left: 3%;
 }
@@ -127,6 +127,9 @@ section:target{
     color: white;
     font-family: UnisonLight;
     font-size: 1.3em;
+}
+.menu a:link{
+    color: white;
 }
 .menu a:hover,
 .menu a.active{
@@ -445,11 +448,13 @@ section:target{
 /* !FOOTER! */
 footer{
     background-color: var(--AzulEscuro-cor);
+    text-align: center;
 }
 footer h3{
     font-size: 1em;
     text-align: center;
     margin-top: 1%;
+    color: white;
 }
 .footer_{
     display: flex;
@@ -458,8 +463,13 @@ footer h3{
     margin: auto;
     padding-top: 1%;
 }
-.footer_ p, h2, h3, a{
-    color: black;
+.footer_ p, .footer_ h2, .footer_ h3, .footer_ a{
+    color: rgb(207, 207, 207);
+}
+.footer_ h2{
+    font-family: UnisonBold;
+    font-size: 1.5em;
+    color: white;
 }
 .footer_ a:hover{
     color: white;
@@ -480,6 +490,7 @@ footer h3{
 .nav_footer{
     width: 25%;
     height: 30%;
+    text-align: center;
 }
 .menu_footer{
     display: flex;
@@ -496,6 +507,9 @@ footer h3{
 }
 .p1{
     margin-top: 2%;
+}
+.contato_footer p{
+    text-align: center;
 }
 
 /* !Animação! */

@@ -6,16 +6,14 @@ window.onscroll=function(){
 function rolagem(){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
         document.getElementsByTagName("header")[0].style.padding="1px 1px"
-        document.getElementById("logo").style.fontSize="1px"
-        document.getElementById("logo").style.width="20%"
+        document.getElementById("logo").style.width="25%"
         document.getElementById("header").style.backgroundColor="var(--VerdeEscuro-cor)"
         document.getElementById("nav-bg").style.top="50px"
         document.getElementById("nav-bg").style.backgroundColor="var(--VerdeEscuro-cor)"
     }
     else{
         document.getElementsByTagName("header")[0].style.padding="20px 10px"
-        document.getElementById("logo").style.fontSize="20px"
-        document.getElementById("logo").style.width="30%"
+        document.getElementById("logo").style.width="35%"
         document.getElementById("header").style.backgroundColor="var(--Verde-cor)"
         document.getElementById("nav-bg").style.top="79px"
         document.getElementById("nav-bg").style.backgroundColor="var(--Verde-cor)"
