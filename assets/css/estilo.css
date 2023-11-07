@@ -642,12 +642,33 @@ footer h3{
     .corpo_header{
         width: 100%;
         padding-top: 8%;
+        padding-bottom: 50%;
     }
     .img_header{
         width: 100%;
+        display: contents;
     }
     .header_img{
-        display: none;
+        width: 40%;
+        top: 26%;
+        right: 28%;
+        position: absolute;
+    }
+    [data-animation='move']{
+        animation: move 4s infinite;
+    }
+    @keyframes move{
+        0% {
+            top: 24%;
+        }
+    
+        50%{
+            top: 26%;
+        }
+    
+        100% {
+            top: 24%;
+        }
     }
 
     /* !CONTAINER! */
@@ -963,7 +984,7 @@ footer h3{
         margin-left: 0;
     }
     .menu{
-        width: 60%;
+        width: 65%;
     }
     .menu a{
         font-size: 1.1em;
@@ -985,6 +1006,10 @@ footer h3{
     }
     .titulo_hearmeout{
         margin-bottom: 1%;
+    }
+    .corpo_header{
+        padding-top: 8%;
+        padding-bottom: 8%;
     }
     .img_header{
         width: 60%;
@@ -1061,7 +1086,8 @@ footer h3{
         font-size: 1.8em;
     }
     .header_img{
-        width: 55%;
+        width: 50%;
+        right: 15%;
     }
     .navbar{
         width: 90%;
