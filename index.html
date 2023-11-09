@@ -1,49 +1,411 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sales Meeting 2024</title>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HearMeOut</title>
 
-        <!-- !RESET! -->
-        <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- !Bootstrap! -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
 
-        <!-- !CSS! -->
-        <link rel="stylesheet" href="assets/css/estilo.css">
+    <!-- !CSS! -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <!-- !FAVICON! -->
-        <link rel="shortcut icon" alt="Logo Sales Meeting" href="assets/img/Imageam2.png" type="image/x-icon">
+    <!-- !Fonts! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 
-        <div class="container_login">
-            <div class="login">
-                <div class="header_login">
-                    <div class="titulo_login">
-                        <h1>Sales Meeting 2024</h1>
-                    </div>
-                    <div class="subtitulo_login">
-                        <h3>Access and stay up to date with the event!</h3>
-                    </div>
-                </div>
-                <form class="forms_login" action="home/processa_login.php" method="POST">
-                    <div class="login_forms">
-                        <input type="email" name="email" id="email" placeholder="username">
-                        <input type="password" name="senha" id="senha" placeholder="password">
-                    </div>
-                    <div class="btn_login">
-                        <button class="login_btn" type="submit">LOGIN</button>
-                    </div>
-                </form>
-            </div>
-            <div class="img_login">
-                <img class="login_img" src="assets/img/Baxter_ShapeTheFuture_WebsiteHeader_v01.png" alt="">
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+    <!-- !Favicon! -->
+    <link rel="shortcut icon" alt="logo HearMeOut" href="assets/img/favicon.png" type="image/x-icon">
+    
+  </head>
+  <body class="body" id="body">
+
+    <!-- !Menu! -->
+    <header class="header" id="header">
+      <div class="navbar">
+        <!-- Logo -->
+        <div class="logo" id="logo">
+            <a href="index.html"><img class="img_logo" src="assets/img/logoHearMeOut.png" alt="Logo HearMeOut"></a>
         </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="menu" id="menu">
+            <a id="header_titulo" href="#quemsomos">Quem somos</a>
+            <a id="header_titulo" href="#diferenca">Diferença</a>
+            <a id="header_titulo" href="#casos">Casos</a>
+            <a id="header_titulo" href="#team">Time</a>
+        </nav>
+      </div>
+    </header>
+    <div class="nav-bg" id="nav-bg"></div>
 
-        <!-- !JavaScript! -->
-        <script src="assets/js/program.js"></script>
+    <!-- !Herder! -->
+    <section class="hearmeout" id="hearmeout">
+      <div class="container_hearmeout">
+        <div class="corpo_header">
+          <h2 class="titulo_hearmeout">HEARMEOUT</h2>
+          <h3>Transformando silêncio em oportunidades</h3>
+        </div>
+        <div class="img_header">
+          <img class="header_img" data-animation="move" src="assets/img/avatar.jpg" alt="Imagem de uma mulher fazendo um sinald e oi em libras">
+        </div>
+      </div>
+    </section>
+    
 
-    </body>
+    <!-- !container! -->
+    <div class="container">
+
+      <!-- !quem somos! -->
+      <section class="quemsomos" id="quemsomos">
+        <h1 data-anime="rigth" >Quem somos?</h1>
+        <p data-anime="rigth" class="qm_somos_p1">
+          Somos um projeto escolar cujo o objetivo é usar os conhecimentos que aprendemos durante esses 2 anos para a feira 
+          tecnológica da nossa ecola.
+        </p>
+        <p data-anime="rigth">
+          Vamos explicar de forma prática e teórica as dificuldades das pessoas surdas, e como é importante que tenham assecibilidade
+          para compreender tudo de forma fácil. Também vamos mostrar alguns casos e relatos de pessoas que não escutam absolutamente
+          nada ou quase nada e a diferença entre deficiência auditiva e surdo.
+        </p>
+      </section>
+      
+      <!-- !Diferença! -->
+      <section class="diferenca" id="diferenca">
+        <h1 data-anime="left">Deficiência auditiva ou surdez?</h1>
+        <div class="diferenca_container">
+          <div class="dif_esquerda">
+            <!-- *O que é* --> 
+            <p data-anime="left">
+              As duas palavras estão corretas e podem ser utilizadas. Porém, os termos surdo e deficiente auditivo não devem ser tratados como sinônimos. 
+            </p>
+            <p data-anime="left">
+              Entender essa diferença é o primeiro passo para ver que os indivíduos com perda auditiva têm outras necessidades, de acordo com o grau e o tipo de problema 
+              que os acomete
+            </p>
+            <div class="dif_esquerda_img" data-anime="left">
+              <img src="assets/img/auditivo.png" alt="" class="img_dif_esquerda">
+            </div>
+            <p data-anime="left">
+              Do ponto de vista clínico, o deficiente auditivo e o surdo se distinguem de acordo com o grau da perda de audição. Isso reflete a capacidade de escutar 
+              que a pessoa ainda apresenta e a forma como o problema se desenvolveu. Assim, deficiente auditivo é aquele que tem algum grau de perda auditiva mesmo que, 
+              em algum momento, tal perda se torne total. O surdo, por sua vez, tem total ausência de audição. Ele não escuta nada, sendo que o problema pode ter origem 
+              congênita ou não.Isso significa que, em grande parte dos casos, o indivíduo tem o problema desde o nascimento. Como consequência, ele aprendeu a se comunicar 
+              de acordo com a Língua Brasileira de Sinais (Libras) ou outras formas de comunicação não verbais.
+            </p>
+          </div>
+          <div class="dif_direita">
+            <!-- *Acessibilidade* -->
+            <div class="dif_direita_img" data-anime="left">
+              <img src="assets/img/acessibilidade.png" alt="" class="img_dif_direita">
+            </div>
+            <h2 data-anime="left">Como ter uma melhor acessibilidade?</h2>
+            <p data-anime="left">
+              Ter uma melhor acessibilidade em relação a pessoas surdas envolve a adoção de práticas e abordagens que facilitem a comunicação, a interação e o envolvimento 
+              de pessoas surdas em diversos contextos. Aqui estão algumas dicas e estratégias para melhorar a acessibilidade:
+            </p>
+            <!-- 1 -->
+            <p data-anime="left">
+              <strong>1) Língua de Sinais:</strong> Reconheça e respeite a língua de sinais usada em sua região (por exemplo, a Língua Brasileira de Sinais - Libras). Aprender alguns sinais 
+              básicos pode ajudar na comunicação e criar um ambiente mais inclusivo.
+            </p>
+            <!-- 2 -->
+            <p data-anime="left">
+              <strong>2) Intérpretes de Libras:</strong> Disponibilize intérpretes de Libras em eventos, reuniões, palestras e atividades importantes para garantir que pessoas 
+              surdas tenham acesso à informação em tempo real.
+            </p>
+            <!-- 3 -->
+            <p data-anime="left">
+              <strong>3) Legendas e Legendagem ao Vivo:</strong> Utilize legendas em vídeos, apresentações, transmissões ao vivo e outros conteúdos audiovisuais. Isso permite 
+              que pessoas surdas 
+            </p>
+            <!-- 4 -->
+            <p data-anime="left">
+              <strong>4) Material Escrito:</strong> Forneça material escrito sempre que possível. Isso pode incluir resumos, agendas, informações detalhadas e apresentações por 
+              escrito.
+            </p>
+            <!-- 5 -->
+            <p data-anime="left">
+              <strong>5) Tecnologia Assistiva:</strong> Explore tecnologias como softwares de reconhecimento de fala e de tradução de texto para facilitar a comunicação em tempo 
+              real.
+            </p>
+            <!-- 6 -->
+            <p data-anime="left">
+              <strong>6) Comunicação Visual:</strong> Utilize elementos visuais, como gráficos, imagens e ícones, para complementar a comunicação oral. Isso ajuda a transmitir 
+              informações de maneira mais clara.
+            </p> 
+          </div>
+       </div>
+       <div>
+        <h1 data-anime="left" class="titulo_tipos">Tipos de deficiência auditiva</h1>
+        <div>
+          <div>
+            <img src="assets/img/tipos.png" alt="" class="img_tipos_esquerda" data-anime="left">
+          </div>
+          <p data-anime="left">
+            Existem vários tipos de deficiência auditiva, que variam em termos de causa, grau de perda e impacto na vida das pessoas. Aqui estão os principais tipos de deficiência auditiva:
+          </p>
+          <p data-anime="left">
+            <strong>Deficiência Auditiva Condutiva:</strong> 
+            Causada por problemas na orelha externa ou média, como bloqueio por cera, infecções no ouvido ou danos nos ossículos auditivos
+          </p>
+          <p data-anime="left">
+            <strong>Deficiência Auditiva Neurossensorial:</strong>
+            Resulta de danos às células ciliadas sensoriais no ouvido interno (cóclea) ou ao nervo auditivo. 
+            É o tipo mais comum de deficiência auditiva permanente;
+            Pode ser causada por envelhecimento, exposição a ruídos altos, trauma, infecções, genética, entre outros fatores
+          </p>
+          <p data-anime="left">
+            <strong>Deficiência Auditiva Central:</strong> 
+            Envolve danos no sistema auditivo central, que processa os sinais sonoros após serem captados pelo ouvido.
+            Pode resultar em dificuldades de processamento auditivo, onde a pessoa pode ouvir, mas tem dificuldade em entender a fala ou processar informações auditivas.
+          </p>
+          <p data-anime="left">
+            <strong>Deficiência Auditiva Unilateral:</strong>
+            Afeta apenas um dos ouvidos.
+            Pode ser causada por diversas razões, incluindo lesões, infecções ou problemas congênitos
+          </p>
+          <p data-anime="left">
+            <strong>Deficiência Auditiva Profunda ou Severa:</strong>
+            Refere-se a uma perda auditiva significativa, onde a pessoa pode ter dificuldade em ouvir até mesmo os sons mais altos.
+            Pode exigir o uso de aparelhos auditivos potentes ou implantes cocleares.
+          </p>
+          <p data-anime="left">
+            <strong>Deficiência Auditiva Bilateral:</strong>
+            Afeta ambos os ouvidos e pode variar em grau de leve a profundo.
+            Muitas pessoas com deficiência auditiva bilateral utilizam aparelhos auditivos ou implantes cocleares para melhorar sua audição.
+          </p>
+        </div>
+       </div>
+      </section>
+
+      <!-- !CASOS! -->
+      <section class="casos" id="casos"> 
+        <div class="titulo_casos" data-anime="left">
+          <h1 data-anime="left">Casos</h1>
+        </div>
+        <div class="casos_content" data-anime="left">
+
+          <!-- *caso 1* -->
+          <div class="card" data-anime="left">
+            <div class="card-body" data-anime="left">
+              <h3 class="card-title" data-anime="left">Millie Bobby Brown</h3>
+              <img src="assets/img/Millie .JPG" class="img-card" alt="Millie Bobby Brown" data-anime="left">
+              <p class="card-text" data-anime="left">
+                Uma das estrelas de uma das séries mais populares em todo o mundo atualmente, chamada "Stranger Things," também 
+                recebeu o diagnóstico de perda auditiva. Em uma entrevista à revista Variety, Millie Bobby Brown compartilhou que 
+                desde uma idade precoce enfrentou dificuldades de audição em um dos ouvidos, e ao longo dos anos, sua condição evoluiu, 
+                resultando em uma surdez parcial (conhecida como surdez unilateral, na qual a pessoa mantém uma boa audição em apenas 
+                um dos ouvidos).
+              </p>
+              <p class="card-text" data-anime="left">
+                Apesar disso, a jovem se tornou uma das atrizes mais bem-sucedidas e mais bem remuneradas do mundo, incentivando a 
+                todos a perseguirem seus sonhos independentemente das adversidades: "Se você realmente gosta, vá em frente. Ninguém 
+                deveria ter o poder de te impedir", aconselha a jovem de apenas 19 anos.
+              </p>
+            </div>
+          </div>
+
+          <!-- *caso 2* -->
+          <div class="card" data-anime="left">
+            <div class="card-body" data-anime="left">
+              <h3 class="card-title" data-anime="left">Ludwig van Beethoven</h3>
+              <img src="assets/img/Beethoven.JPG" class="img-card" alt="Ludwig van Beethoven" data-anime="left">
+              <p class="card-text" data-anime="left">
+                Você sabia que Ludwig van Beethoven, um dos maiores músicos e compositores da história, sofria com perda de audição? 
+                Aos 28 anos, ele começou a perder a audição, começando por sons mais agudos. Com o tempo, a perda de audição piorou, 
+                e ele passou a ouvir zumbidos no ouvido e a sentir sensibilidade na região. No final da vida, Beethoven ficou completamente 
+                surdo.
+              </p>
+              <p class="card-text" data-anime="left">
+                A causa da perda de audição de Beethoven é desconhecida, mas acredita-se que seja uma doença inflamatória no ouvido 
+                chamada otosclerose. Essa doença pode causar perda auditiva progressiva, por isso é possível que Beethoven já estivesse 
+                perdendo a audição quando começou a carreira musical.
+              </p>
+            </div>
+          </div>
+
+          <!-- *caso 3* -->
+          <div class="card" data-anime="left">
+            <div class="card-body" data-anime="left">
+              <h3 class="card-title" data-anime="left">Pedro Bial</h3>
+              <img src="assets/img/Pedro bial .JPG" class="img-card img3" alt="Pedro Bial" data-anime="left">
+              <p class="card-text" data-anime="left">
+                O apresentador de televisão Pedro Bial revelou que tem perda auditiva no ouvido direito. O problema começou em 1994, 
+                quando uma bomba explodiu perto dele durante a guerra de Sarajevo.
+              </p>
+              <p class="card-text" data-anime="left">
+                Desde então, Bial tem dificuldades para ouvir sons graves e agudos. Isso o levou a adotar um formato diferente para o 
+                seu programa "Conversa com Bial", no qual os convidados sentam do lado esquerdo do apresentador, para que ele possa 
+                ouvi-los melhor.
+              </p>
+              <p class="card-text" data-anime="left">
+                Bial é um exemplo de que a deficiência auditiva não é um obstáculo para o sucesso. Ele continua a trabalhar como jornalista 
+                e apresentador, inspirando pessoas com deficiência auditiva ao redor do mundo.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- !Time! -->
+      <section id="team" class="team" data-anime="left">
+        <div class="time" data-aos="fade-up">
+          <div class="section-header">
+             <h1>Nosso time</h1>
+          </div>
+          <div class="container_time">
+            <button class="arrow-left control" aria-label="Previous image">◀</button>
+            <button class="arrow-right control" aria-label="Next Image">▶</button>
+            <div class="gallery-wrapper">
+              <div class="row gy-4 content_team gallery">
+                <!-- *Membro Marcus* -->
+                <div class="card_team item current-item" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member">
+                    <img src="assets/img/marcus.jpg" class="img-fluid" alt="">
+                    <h4>Marcus Moreira</h4>
+                    <span>Desenvolvedor front-end</span>
+                    <div class="social">
+                      <a href="https://github.com/MarcusVBMoreira"><i class="bi bi-github"></i></a>
+                      <a href="https://www.instagram.com/marcus__vb/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/marcusvbmoreira/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *Membro Maria Isadora* -->
+                <div class="card_team item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="member">
+                    <img src="assets/img/maria.jpg" class="img-fluid" alt="">
+                    <h4>Maria Isadora</h4>
+                    <span>Criador de Conteúdo</span>
+                    <div class="social">
+                      <a href="https://github.com/ProjetosMariaisadora"><i class="bi bi-github"></i></a>
+                      <a href="https://www.instagram.com/maria_isadoraa23/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>  
+                <!-- *Membro Miguel* -->
+                <div class="card_team item " data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                      <img src="assets/img/miguel.jpg" class="img-fluid" alt="">
+                      <h4>Miguel Carneiro</h4>
+                      <span>Desenvolvedor Front/Back end</span>
+                      <div class="social">
+                        <a href="https://github.com/projeto-miguel"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/_miguelscm/"><i class="bi bi-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- *Membro Thifany* -->
+                <div class="card_team item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="member">
+                    <img src="assets/img/thifany.jpg" class="img-fluid" alt="">
+                    <h4>Thifany Garcia</h4>
+                    <span>Criador de Conteúdo</span>
+                    <div class="social">
+                      <a href="https://github.com/projetosthif"><i class="bi bi-github"></i></a>
+                      <a href="https://www.instagram.com/thif.4ny_/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *Membro Vinícius* -->
+                <div class="card_team item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="member">
+                      <img src="assets/img/vinicius.jpg" class="img-fluid" alt="">
+                      <h4>Vinícius</h4>
+                      <span>Designer Gráfico</span>
+                      <div class="social">
+                          <a href="https://github.com/ViniciusAugusto14"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/augvns/"><i class="bi bi-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- !Footer! -->
+   <footer>
+      <div class="footer_">
+        <div class="social_footer">
+          <h2>HearMeOut</h2>
+          <p class="p_footer">Nos siga nas redes sociais para acompanhar o projeto e ver um pouco mais do que fazemos aqui, espero que goste, tudo foi feito com muito carinho.</p>
+          <div class="social footer_social">
+            <a href="" class="icons_footer"><i class="bi bi-github"></i></a>
+            <a href="" class="icons_footer"><i class="bi bi-instagram"></i></a>
+            <a href="" class="icons_footer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="nav_footer">
+          <h2>Menu</h2>
+          <nav class="menu_footer" id="menu_footer">
+            <li class="itens_nav"><a id="header_titulo" href="#quemsomos" role="button">Quem somos</a></li>
+            <li class="itens_nav"><a id="header_titulo" href="#diferenca" role="button">Diferença</a></li>
+            <li class="itens_nav"><a id="header_titulo" href="#casos">Casos</a></li>
+            <li class="itens_nav"><a id="header_titulo" href="#team" role="button">Time</a></li>
+        </nav>
+        </div>
+        <div class="contato_footer">
+          <h2>Contato</h2>
+          <p class="p1">Caso queira, entre em contato conosco</p>
+          <p>Telefone: (11)1234-56789</p>
+          <p>Email: h3arme0utt@gmail.com</p>
+        </div>
+      </div>
+      <h3><strong>©2023 HearMeOut</strong></h3>
+    </footer>
+
+    <!-- !Vlibras! -->
+    <!--
+    <section id="Vlibras">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </section>
+    -->
+
+    <!-- !HAND TALK! -->
+    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+    <script>
+      var ht = new HT({
+        token: "13ff05e159b9d68b822d7ba8e1844ad8"   
+    });
+    </script>
+    
+    <!-- !Java Script! -->
+    <script src="assets/js/program.js"></script>
+
+  </body>
 </html>
