@@ -650,7 +650,7 @@ footer h3{
     }
     .header_img{
         width: 40%;
-        top: 26%;
+        top: 24%;
         right: 28%;
         position: absolute;
     }
@@ -663,7 +663,7 @@ footer h3{
         }
     
         50%{
-            top: 26%;
+            top: 24%;
         }
     
         100% {
