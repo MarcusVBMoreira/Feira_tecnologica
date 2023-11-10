@@ -649,9 +649,9 @@ footer h3{
         display: contents;
     }
     .header_img{
-        width: 40%;
-        top: 24%;
-        right: 28%;
+        width: 35%;
+        top: 38%;
+        right: 30%;
         position: absolute;
     }
     [data-animation='move']{
@@ -659,15 +659,15 @@ footer h3{
     }
     @keyframes move{
         0% {
-            top: 24%;
+            top: 38%;
         }
     
         50%{
-            top: 24%;
+            top: 38%;
         }
     
         100% {
-            top: 24%;
+            top: 38%;
         }
     }
 
