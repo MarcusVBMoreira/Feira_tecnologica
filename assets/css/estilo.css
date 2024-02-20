@@ -642,7 +642,7 @@ footer h3{
     .corpo_header{
         width: 100%;
         padding-top: 8%;
-        padding-bottom: 50%;
+        padding-bottom: 14%;
     }
     .img_header{
         width: 100%;
@@ -653,23 +653,9 @@ footer h3{
         top: 38%;
         right: 30%;
         position: absolute;
+        display: none;
     }
-    [data-animation='move']{
-        animation: move 4s infinite;
-    }
-    @keyframes move{
-        0% {
-            top: 38%;
-        }
     
-        50%{
-            top: 38%;
-        }
-    
-        100% {
-            top: 38%;
-        }
-    }
 
     /* !CONTAINER! */
     .container{
